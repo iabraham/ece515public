@@ -30,7 +30,7 @@ quarto render
 
 from the root folder. This will create a folder `_site` within the root folder.
 The contents of this folder can be simply copied over to the destination. For
-example:
+example (for Instructors, **NOT** for scribes):
 
 ```
 rsync -avzh --progress _site/ sftp.courses.grainger.illinois.edu:/ece515/fa2025/
