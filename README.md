@@ -18,8 +18,7 @@ Quarto should launch a preview of the website in a browser.
 
 ### Scribing
 
-You may sent in a `.qmd` file if you wish your notes to be in the format of the website.
-If you prefer to write (neatly) on your tablet, we can also share a PDF with the class. 
+You must sent in a `.qmd` file to be used with the format of the website for extra credit. You may use TikZ, Visio, InkScape etc. to draw figures. 
 
 ## Publishing 
 
