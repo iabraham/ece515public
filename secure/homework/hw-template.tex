@@ -1,0 +1,104 @@
+% This is how you write a comment. 
+% Don't worry about all the packages, most of them are not needed but these are the ones I usually end up using. 
+
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{pgf,tikz}
+\usepackage[shortlabels]{enumitem}
+\usepackage{color}
+\usepackage{pgfplots}
+\usepackage[margin = 1 in]{geometry}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{psfrag}
+\usepackage{etoolbox}
+
+% Nice mathy squares
+\newcommand*{\QEDB}{\hfill\ensuremath{\blacksquare}}
+\newcommand*{\QEDA}{\hfill\ensuremath{\square}}
+
+% This is  how you declare a math operator (so that it shows up as not italic in math mode)
+\DeclareMathOperator{\spn}{span}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% All these will have the same counter and will be italic
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}[theorem]{Definition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+
+
+\newtheorem{remark}{Remark}
+\newtheorem{example}[remark]{Example}
+
+%This command puts a basically write f(t) if given \xlr{f}{t} 
+\newcommand{\xlr}[2]{#1 \left(#2\right)}
+\newcommand{\clr}[2]{#1 \left\{ #2 \right\}}
+
+%This commands writes the bold R or C used to denote the commplexes or reals
+\newcommand {\mb}[1]{\ensuremath{\mathbb #1}}
+
+% Header and footer information 
+% !! UPDATE THIS INFORMATION !!
+
+\lhead{ECE 515 - Fall 2017 at University of Illinois at Urbana-Champaign}
+\rhead{Homework \# x}
+\lfoot{Author: Lastname, Firstname}
+\rfoot{NetID: netid}
+%=======================================
+
+
+\begin{document}
+
+% -----------------------------------------
+
+\section*{Problem 1} \setcounter{section}{1}
+Consider the controlled vector differential equation
+\begin{equation}
+\label{p1}
+\frac{dx}{dt} = \xlr{f}{t,x,\lambda} + \sum \limits_{i = 1}^m u_i \xlr{g_i}{t}
+\end{equation}
+where \(x \in \mb R ^n, t \in J \subseteq \mb R\) and \(\lambda \in \Lambda \subset \mb R ^k \), etc.  
+\begin{enumerate}[(a), noitemsep]
+	\item Ask a question about Eq. (\ref{p1})
+	\item Ask another question.
+\end{enumerate}
+
+\subsection*{Solution}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a porttitor mi, ut vestibulum dolor. Sed placerat lobortis ullamcorper. Aliquam placerat sapien purus, et consectetur ligula dictum vitae. Integer eu felis non tellus gravida viverra vitae vitae purus. Curabitur tempus nunc gravida nibh rhoncus, ac maximus augue suscipit.
+
+\begin{defn}
+	Donec accumsan ac est auctor condimentum. Cras porttitor tellus bibendum, semper dui eu, ultricies odio.
+	\begin{equation}
+			E= mc^2 = \frac{hc}{\lambda}
+	\end{equation}
+\end{defn}
+
+\begin{enumerate}[(a), noitemsep]
+	\item Vestibulum at hendrerit ligula. Suspendisse potenti. Proin placerat a nulla at accumsan. Vestibulum tellus justo, condimentum a posuere eget, condimentum ac ipsum.
+	\begin{remark}
+		Donec blandit dolor ullamcorper libero sagittis, id congue mauris feugiat. Vivamus ut dignissim justo. Pellentesque at ipsum facilisis, placerat turpis nec, tempor ante. Nam interdum massa id ultrices semper. Duis vel lectus commodo, ullamcorper libero in, pellentesque nisi. \QEDA
+	\end{remark} 
+	\item Fusce eu nisl tincidunt, placerat ipsum et, aliquet lorem. Vivamus quis volutpat lorem. Praesent imperdiet nec purus non congue. Quisque dictum pharetra sapien ut varius. Suspendisse gravida metus vel metus iaculis imperdiet. Vivamus pulvinar suscipit odio, in sodales arcu. Maecenas vulputate risus sed arcu vestibulum varius.
+	\begin{proposition}
+		Cras porttitor tellus bibendum, semper dui eu, ultricies odio. 
+	\end{proposition}
+	Nam interdum massa id ultrices semper. Duis vel lectus commodo, ullamcorper libero in, pellentesque nisi. 
+\end{enumerate} \QEDB
+
+% -----------------------------------------
+
+\end{document}

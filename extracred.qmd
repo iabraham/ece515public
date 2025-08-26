@@ -1,0 +1,129 @@
+---
+title: "Extra credit opportunities"
+---
+
+A typical offering of this course has had few extra credit opportunities. The
+last time I taught it, I offered extra credit for scribing the lecture notes.
+My hope was that we could augment the transcribed set with quality
+transcriptions that could be added to the course website (similar to the
+initial set of notes provided for the first few weeks) -- it didn't really work
+out as there was no way to perform quality control. 
+
+So this time, I have slightly changed the scribing requirements while also
+providing a different way to earn extra credits. Students must choose **one**
+of the following methods.
+
+::: {.callout-note}
+Doing either of these is completely **_optional_** -- simply acing the homework
+and the exams should be sufficient to earn an $A$ in this course. 
+:::
+
+## 1. Optional scribing 
+
+Students enrolled in the course have the opportunity (on a first-come
+first-served basis) to transcribe the lectures into lecture notes to be shared
+with the class.
+
+Each quality transcription (see first few for examples on the Lectures page)
+can earn up to **2%** extra credit in the course (to make up for points lost in the
+midterms, homework or final exam) for a **maximum of up to 8%**.
+
+[Sign up
+here](https://www.signupgenius.com/go/5080B44ACA92DABF58-58027909-ece515) to
+scribe the lectures (limited to two students per lecture). Transcribed notes
+**_must_** be submitted as `.qmd` files within two weeks of the corresponding
+lecture. 
+
+To see examples of Quarto Markdown files, click the `</> Code` button at the
+top of the currently transcribed lecture notes. To see how your Quarto files
+might display on this website, see the [source code](https://github.com/iabraham/ece515public) for the course website
+and instructions therein (as of the first day of instruction). 
+
+## 2. Optional project 
+
+ECE 515 (also ME 540 & SE 522) has always been a theory course. The content we
+cover is mathematically beautiful and truly builds the fundamentals required to
+delve deeper into modern control theory. Traditionally, there has been nary a
+computational project in 515. I took the course in this traditional format many
+many years ago, and I intend to, for the most part, hew to tradition.
+
+That said, these days reinforcement learning, deep learning and AI, and all
+that is the rage – so I thought, naively maybe (remains to be seen):
+
+> _"How can we use something like ChatGPT to make
+515 more interesting?"_. 
+
+Your extra credit project, if you choose to do it – again, it is absolutely
+unnecessary to do this project to get an $A$ in this course – will be to build an
+applet/webpage/interactive demonstration of some concept we study in ECE 515
+while being **free to use Generative AI.**
+
+[Here is an example I built.](https://cstd.ece.illinois.edu/lqr_gemini.html){target="_blank"}
+
+If you choose to go this route you can recieve **upto 8\% extra credit**. 
+
+- 1\% for a proposal (due by the end of Week 5, **October 17**)
+- 7\% for a working prototype (due by last day of instructions) composed as follows:
+  - 1\% for a publicly accessible, well documented (e.g. has `README.md` file) Github repository 
+  - 2\% if the TA is able to follow your instructions and get your demonstration running
+  - 2\% for correct technical analysis of topic and interpretation of results/demos
+  - 2\% for accompanying explanatory write-up of the content of notebook/demo. 
+
+### Possible topics 
+
+Below is a non-exhaustive and **_unverified_** list I put together glancing over
+our class notes. 
+
+::: {.callout-warning}
+Some of the suggestions below may not be feasible in a three-week span, may be
+computationally prohibitive or may not be solvable at all. 
+:::
+
+#### Chapter 1 - Modeling and analysis 
+
+ - Pick a harder system like the [Furuta
+ pendulum](https://en.wikipedia.org/wiki/Furuta_pendulum), or an
+ [airplane](https://www.wolfram.com/mathematica/new-in-10/nonlinear-control-systems/example-of-a-general-nonlinear-system.html),
+ etc.  and do something similar to this notebook (PID, LQR, some feedback
+ control). Demonstration should have some interactivity.
+ - Create an applet that given $\dot x = f(x)$ where $x \in \mathbb{R}^n$ (user
+ provides $f(x)$) visualizes 2D sections (user picks which) of the phase space.
+
+#### Chapter 2 - Linear algebra
+
+ - Create demonstrations or visualizations of finite dimensional linear
+ operators. Visualize the various interpretations of determinants in two and
+ three dimensions. What about higher dimensions? 
+ - Show (i.e. demonstrate interactively) applications of eigenvalues (e.g.
+ eigenfaces, vibrations, musical instruments, etc.) in a notebook. 
+
+#### Chapter 3 - Solutions to state equations
+
+ - Examine approximations to LTV solutions using the [Peano-Baker series](https://en.wikipedia.org/wiki/State-transition_matrix#Peano%E2%80%93Baker_series) -- how
+ drastically do the solutions change as more and more terms are added?
+ Visualize in an interactive notebook. 
+ - Create a notebook that computes the
+ [Lyapunov-Floquet](https://en.wikipedia.org/wiki/Floquet_theory)
+ transformation of an LTV system (say 2x2 or 3x3). Find a way to visualize the
+ time varying change of coordinates.
+ - Read about [Carlemann
+ linearization](https://en.wikipedia.org/wiki/Carleman_linearization) (Wikipedia
+ is woefully inadequate) --  evaluate the effectiveness of different orders of
+ Carleman linearization at various points in the phase
+ space of a Van der Pol oscillator.
+
+#### Chapter 4 - Stability 
+
+ - Create a tool that verifies whether a given (polynomial) function is a
+ Lyapunov function or not for an autonomous system. If not, report what is violated. 
+ - Read about [Center manifold
+ theorem(s)](https://en.wikipedia.org/wiki/Center_manifold#Center_manifold_theorems)
+ and create a nice notebook explaining it with visuals for a few non-trivial
+ examples. Make it interactive. 
+
+#### Chapters > 5
+
+ - Create an interactive notebook that can generate realizations of relatively
+ manageable MIMO transfer functions (see Section 6.6 in the Class Notes) 
+ - **More TBD by end of Septemeber**
+

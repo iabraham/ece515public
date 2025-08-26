@@ -1,0 +1,50 @@
+project:
+  type: website
+  pre-render: zsh prepare.sh
+
+website:
+  title: "ECE 515 - Control System Theory & Design"
+  open-graph: true
+  page-footer: 
+    border: false
+    background: "#D9E3E4"
+    left: "...we see but parts of the edifice..."
+    right: Made using [Quarto](https://quarto.org) by Ivan Abraham.
+  sidebar:
+    search: false
+    style: "docked"
+    logo: "/resources/logo-light.gif"
+    background: "#D9E3E4"
+    alignment: center
+    contents:
+      - href: "syllabus.qmd"
+        text: Syllabus
+      - href: "schedule.qmd"
+        text: Schedule 
+      - href: "lectures.qmd"
+        text: Lectures
+      - href: "assignments.qmd"
+        text: Homework
+      - href: "exams.qmd"
+        text: Exams
+      - href: "https://cstd.ece.illinois.edu"
+        text: Demos
+      - href: "https://www.gradescope.com/"
+        text: Gradescope
+      - href: "https://edstem.org/"
+        text: EdStem
+      - href: "extracred.qmd"
+        text: Extra credit
+format:
+  html:
+    theme:
+      light: cosmo 
+      dark: [solar, ./resources/theme-dark.scss]
+    css: "/resources/styles.css"
+    toc: true
+    include-after-body:
+      text: |
+        <script type="application/javascript" src="/resources/switch.js"></script>
+
+
+

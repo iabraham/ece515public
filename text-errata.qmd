@@ -1,0 +1,42 @@
+---
+title: "Errata for class notes"
+---
+
+The following were colleceted together in [Fall
+2024](https://courses.grainger.illinois.edu/ece515/fa2024/errata.html).
+
+ * **p. 7** -- Perhaps note that $I_1$ and $I_2$ are moments of inertia of the two links
+ * **p. 24** -- Vector space axioms should include distributive properties: 
+ $$a*(x+y)=a*x + a*y \quad \textrm{and} \quad (a+b)*x=a*x+b*x $$ 
+ * **p. 31** -- At the very bottom where the closed-form expression of $\beta$ is
+ shown, the top-right variable in the matrix, $\alpha_{in}$, should be
+ $\alpha_{1n}$, and the bottom-left variable should be $\alpha_{m1}$
+ * **p. 37** -- Sixth line in the Section 2.9. "By orthogonality we then have" should
+ be "By linearity we have" (No orthogonality is assumed/needed at that point)
+ * **p. 38** -- Seven lines before Section 2.10, the line contains "to to"
+ * **p. 45** -- Problem 2.11.20. the vector $x$ should be from complex $n$ dimensional space not $\mathbb{R}^n$
+ * **p. 77** -- In the seventh line of the proof. It is stated that the gradient of
+ $V$ is a row vector. Most other places in the book (and in the literature)
+ gradients are column vectors. There are some transposes taken in some of the
+ lines that follow which would not be there if the gradient were a column
+ vector.
+ * **p. 90** -- In the equation in line 8 just after "Equivalently, we must have" the
+ $\lambda_i$ in the exponent should have a complex conjugate symbol over it (or a
+ star).
+ * **p. 171** -- The variable $y$ in (10.9) should be replaced by $t$ and supescript $^o$
+ should be on the $x$ variables on the left hand . Moreover it would be better to
+ add more to the notation to make clear that each side of the inequality is
+ evaluated along a trajectory and the two derivatives are total derivatives. So
+ it would be 
+ $$ 0 = \ell(x^o(t),u^o(t),t) + \frac{d}{dt} \left(
+ V^o(x^o(t),t)\right) \leq \ell(x(t),u(t),t) + \frac{d}{dt} \left(
+ V^o(x(t),t)\right)$$
+* **p. 171** -- Four lines before Example 10.2.1, the apostrophe superscript on $u$ in the integral should be removed.
+* **p. 173** -- First line -- should be "Since $BR^{-1}B^T$ is semi positive definite ..."
+* **p. 176** -- About 5-7 lines from bottom: The sentence "Note that if the eigenvalues of $\mathcal{H}$ are distinct then by Lemma 10.4 (i.e. if $\lambda$ is an eigenvalue then so is $-\lambda$) none can lie on the $j\omega$ axis" isn't true. (It is stated six lines before that that if the model is sabilizable and detectable then there are no purely imaginary eigenvalues.)
+* **p. 178** -- Six lines from end `ARE` is not defined until p. 181.
+* **p. 205** -- Lines 6, 10, and 14: It should be $p^T(t)$ defined to equal the $\partial V^o / \partial x$. Later text switches correctly to gradients.
+* **p. 207** -- Figure 11.1: It could be a problem with the PDF viewer but the gradient vectors don't show up well in Figure 11.1. 
+* **p. 212** -- Something is wrong at the end of (11.14). A fix is to delete $\cal H$ and vector at end with $\dot{x}$ and $\dot{\lambda}$. OR insert an equal sign before $\cal H$ and remove dots on $x$ and $\lambda$ in the vector at the end.
+* **p. 218** -- The equations in part (b): $x_i(t_i)$ should be $x_i(t_1).$ In the next line it should be for $j\in I^c$ not for $i\in I^c.$. In (11.15) the second argument of $(\partial m)/(\partial t)$ should be $t_1$ (i.e. add subscript 1 to $t$). In last equation five lines from bottom of the page the superscript $T$ should be just after $p$: i.e. $p^T(t)$ and not $p(t)^T$.
+

@@ -1,0 +1,83 @@
+---
+title: "Exams"
+---
+
+There will be two midterm exams throughout the semester. They will be during
+normal class hours.
+
+ * **Midterm 1:** Thursday, October 2nd
+ * **Midterm 2:** Thursday, November 6th
+
+During the first midterm, you will be allowed **one** reference sheet. During the
+second midterm and the final exam, you will be allowed **two** reference sheets.
+
+* **Final:** As per [Registrar's office.](https://courses.illinois.edu/schedule/2025/fall//ECE/515)
+
+::: {.callout-note}
+The Registrar has determined this to be **TBD** on **TBD** in **TBD**.
+:::
+
+Reference sheets must be on an 8.5 in. by 11 in. sheet of paper. This paper size
+is typically called 'Letter' paper. Both sides may be used, but reference
+sheets **must** be handwritten. 
+
+In this course the use of calculators or electronic devices (cell phones or
+others) will not be allowed during examinations. If you are found using one, it
+will be investigated as potential cheating.
+
+## Exam make-up policy 
+
+The testing schedule for this course is available from the very first day of
+class. 
+
+> **There are no make-up midterm exams for any reason.**
+
+The reasoning for this is similar to that which concerns the [homework
+policy](/syllabus.html#homework).
+
+However, we recognize that severe illness, [family
+emergencies](https://odos.illinois.edu/community-of-care/resources/students/bereavement/){target="_blank"}
+or unforeseen circumstances may prevent you from taking an exam. For this
+reason, you	are allowed	to drop one exam with appropriate documentation
+(submitted as soon as possible, but not later than one week after the missed
+exam) and the final exam percentage will replace your missed exam. Please note
+that a missed exam without proper documentation **cannot** be considered a
+dropped exam. You _must attend the final_ unless you are seeking an incomplete.
+
+Policy concerning the final exam will follow the [student
+code](https://studentcode.illinois.edu/article3/part2/3-201/).
+
+
+
+## Practice material 
+
+TBD
+
+<!--
+
+#### Midterm 2
+
+The first midterm will cover lecture material from 01/16 to 03/21 with a focus
+on material covered after 02/15. The corresponding homework material (Homework
+1 - Homework 9) is also included in the test material (with a focus on Homework
+5 - 9).
+
+ - Some practice material is available at [LSTJ's Companion
+   Website](https://web.ece.ucsb.edu/~hespanha/linearsystems/#Exercises). You
+   can attempt problems that fall within the coverage of material listed above. 
+ - Some more additional practice questions can be found
+   [here](secure/exams/mt2_practice.html).
+
+#### Midterm 1 
+
+The first midterm will cover lecture material from 01/16 to 02/15. The
+corresponding homework material (Homework 1 - Homework 5) is also included in
+the test material.
+
+ - Some practice material is available at [LSTJ's Companion
+   Website](https://web.ece.ucsb.edu/~hespanha/linearsystems/#Exercises). You
+   can attempt problems that fall within the coverage of material listed above. 
+ - Some more additional practice questions can be found
+   [here](secure/exams/mt1_practice.html).
+
+-->

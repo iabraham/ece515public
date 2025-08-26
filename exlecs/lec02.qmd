@@ -1,0 +1,416 @@
+---
+Title: Lecture 02 - 08/28
+
+code-tools:
+  source: true
+  toggle: false
+---
+
+::: {.callout-note}
+For students who intend to scribe, you can see the source code for this page
+by clicking the code button above this callout. The source is compatible with the
+[Quarto](https://quarto.org/) publishing system. 
+
+Scribed by: _itabrah2_
+:::
+
+## Recap 
+
+Last time we discussed course logistics, course overview and introduced the
+state space formulation for linear control systems. In this lecture, as
+promised, we will do some review of the necessary linear algebra concepts.
+
+
+
+## Lin. algebra review - Part 1A
+
+We assume almost everyone in class is familiar with the usual notion of
+vectors, either as geometric objects (common in physics) or as $n$-tuples of
+numbers (common in computer science, also called arrays). In this note we make
+this notion a bit more axiomatic and formal so that we will get used to the
+mathematical machinery. 
+
+### Fields 
+Formally, vectors are elements that belong to a _vector space_ which are
+typically defined over _fields_.
+
+:::{#def-field}
+## Field
+<br>
+A **field** is a collection (or set) $F$ equipped with two binary operations
+(binary operations are mappings $F \times F \to F$) denoted $+$ and $\cdot$ called
+addition and (scalar) multiplication respectively such that they satisfy the
+_field axioms_:
+
+ * _Associativity_ and _commutativity_ of multiplication and addition:
+   $$ a + \left( b + c \right) = \left( a + b \right) + c \quad \textrm{and}
+   \quad a \cdot \left( b \cdot c \right) = \left( a \cdot b \right) \cdot c $$
+   $$ a + b = b + a \qquad \textrm{and} \qquad a \cdot b = b \cdot a $$
+ * _Distributivity_ of multiplication over addition
+   $$ a \cdot \left(b + c \right) = a \cdot b  + a \cdot c $$
+ * Existence of multiplicative and additive _identities_.
+   $$ \exists 0, 1 \in \mathbb{F} \qquad \textrm{such that} \qquad a + 0 = a,
+   \quad a \cdot 1 = a \quad \forall a \in \mathbb{F}$$
+ * Existence of multiplicative and additive _inverses_
+   $$ \forall a \in F, \quad \exists y \quad \textrm{such that} \quad  a + y = 0 $$
+   and 
+   $$ \forall a \in F - \{0\}, \quad \exists z \quad \textrm{such that} \quad  a z = 1 $$
+   Typically we write $-a$ for $y$ and $a^{-1}$ for $z$.
+
+:::
+
+Familiar examples of fields include $\mathbb{R}, \mathbb{C}, \mathbb{Q}$, etc. 
+
+::: {.column-margin}
+The integers $\mathbb{Z}$ do not form a field, rather they form a 
+[ring](https://en.wikipedia.org/wiki/Ring_(mathematics)).
+:::
+
+::: {#exr-integersmodp}
+## Integers modulo p
+<br>
+For a given prime number $p>2$, denote the set of integers modulo $p$ as
+$\mathbb{Z}/p$. For example, if $p=5$ then $\mathbb{Z}/5 := \{0, 1, 2, 3, 4\}$.
+Equip such a $\mathbb{Z}/p$ with the binary operations $+_{p}$ and $\times _p$ where
+$$x +_p y := (x + y) \mod p$$ 
+and 
+$$x \times_p y := (x \times y ) \mod p$$
+
+Show that $\mathbb{Z}/p$ forms a field. 
+
+:::
+
+### Vector space 
+
+With the above definition out of the way, now we are in position to formally
+define a vector space. 
+
+:::{#def-vspace}
+## Vector space
+<br>
+A **vector space** $V$ over a field $\mathbb{F}$ (often denoted $V_{\mathbb{F}}$)
+is a set equipped with operations $+$ and $\cdot$ called vector addition & scalar
+multiplication (by elements of $\mathbb{F}$) satisfying the _vector space axioms_:
+ 
+ * Vector addition is commutative and associative 
+   $$ a + b = b + a \qquad \textrm{and} \qquad a + \left( b + c \right) = \left( a + b\right) + c $$
+ * Multiplication is associative and distributive (over vector & field addition)
+   $$ \alpha \cdot \left(a + b \right) = \alpha \cdot a + \alpha \cdot b \qquad \textrm{and} \qquad \alpha \cdot (\beta v) = \left(\alpha \beta \right) \cdot v $$
+ * Existence of additive inverse and identity 
+   $$\forall x \in V \quad \exists \mathbf{z} \in V \quad \textrm{such that} \quad x + z = x $$ 
+   we denote such $z$ as $\mathbf{0}$ the zero vector. 
+   $$\forall x \in V \quad \exists y \quad \textrm{such that} \quad x + y = \mathbf{0} $$ 
+   we denote such $y$ as $-x$. 
+ * Existence of multiplicative identity 
+   $$ \exists 1 \in \mathbb{F} \quad \textrm{such that} \quad \forall x \in V, \quad x \cdot 1 = x $$
+
+:::
+
+Here familiar examples of vector spaces include:
+
+ * $n$ tuples of real numbers: $\mathbb{R}^n$ (with $\mathbb{F} = \mathbb{R}$)
+ * $n$ tuples of complex numbers: $\mathbb{C}^n$ (with $\mathbb{F}= \mathbb{C}$)
+ * $\mathbf{C} \left(\mathbb{R}, \mathbb{R}\right)$: The space of real valued continuous
+   functions defined on the real line (what should be the field?)
+ * The space of $n \times n$ matrices: $\mathbf{M}_{n \times n}$ (what should be the field?)
+ * $\mathbb{P}^n[0, 1]$: The space of polynomials upto order $n$ defined over
+   $[0, 1]$. That is, $t^k$ where $k=0, 1, \dots, n$ and $t \in [0, 1]$. 
+ * etc. 
+
+**Subspace:** A subspace $Y$ of a vector space $V$ is a subset of $V$ which is
+itself a vector space. In other words, if $x, y \in Y$ then $\alpha x + \beta y
+\in Y$ for all $a, b \in \mathbb{F}$. 
+
+**Examples:** The symmetric $n \times n$ matrices form a subspace of
+$\mathbf{M}_{n \times n}$ and the vectors 
+$$
+e_1 = \begin{bmatrix} 1 \\ 0 \\\ 0 \end{bmatrix}, \quad e_2 = \begin{bmatrix} 0
+\\1 \\ 0 \end{bmatrix}
+$$
+span the subspace that is the $x$-$y$ plane in $\mathbb{R}^3$. 
+
+::: {.column-margin}
+The **span** of a vector or a set of
+vectors is the space generated by their finite linear combinations.
+:::
+
+A concept of paramount importance in linear algebra is that of _linear
+independence_ and a _basis_. Informally, a set is linearly independent if no
+element of the set can be expressed using other elements of that set and a
+basis is some privileged linearly independent set which can be used to generate
+every element in the vector space. We formalize these definitions below. 
+
+:::{#def-lin_indep}
+## Linear independence, spanning set & dimension
+<br>
+**Linear independence:** A set of vectors $\{v_1, v_2, \dots, v_n\}$ in a
+vector space is said to be linearly independent if 
+$$
+\sum \limits _{k} ^{n} \alpha_k v_k = 0 , \; \alpha_i \in \mathbb{F} \quad
+\implies \quad \alpha_i = 0 \; \forall i 
+$$
+Otherwise, it is said to be linearly dependent. 
+
+**Spanning set:** A set of vectors $S:=\{v_1, v_2, \dots, v_n\}$ in a
+vector space is said to form a spanning set if every $x \in V$ can be written as 
+$$
+\sum \limits _k  \alpha _k v_k = x \quad \textrm{where} \quad \alpha_i \in \mathbb{F}
+$$
+The set $S$ is said to be minimal if the removal of any element from $S$
+causes $S$ to be no longer be a spanning set. 
+
+**Dimension:** The maximal numer of linearly independent vectors in $V$
+is called the _dimension_ of $V$: denoted $\dim V$. 
+
+:::
+
+**Example:** 
+Consider the following vectors in $\mathbb{R}^n$:
+$$
+e_1 = \begin{bmatrix}1 \\ 0 \\ \vdots \\ 0 \end{bmatrix}, \quad e_2 =
+\begin{bmatrix}0 \\ 1 \\ \vdots \\ 0 \end{bmatrix}, \quad \dots, \quad e_n =
+\begin{bmatrix}0 \\ 0 \\ \vdots \\ 1 \end{bmatrix}
+$$
+They are obviously linearly independent. Moreover any other vector can be
+written as a linear combination of $e_k$. Thus the dimension of $\mathbb{R}^n$
+is $n$. 
+
+::: {#prp-basislemma}
+## Basis proposition
+<br>
+A set $B \subset V$ is a **basis** for $V$ _if and only if_:
+
+ 1. It is linearly independent 
+ 2. $B$ is a spanning set for $V$.
+
+Then, every $v \in V$ can be written _uniquely_ as a linear combination of
+elements of $B$. 
+
+:::
+
+:::{.callout-caution collapse="true"}
+## Infinite dimensional vector spaces? 
+<br>
+Consider the vector space $\mathbb{P}^{\infty}\left(\mathbb{R}\right)$: the
+space of all polynomials of finite order on $\mathbb{R}$. In this space, the
+functions $t^k, k = 0, 1, 2, \dots$ are obviously linearly independent
+(why?). However one can let $k$ get arbitrarily large. Thus _dimension_ as
+defined above ill-suited for this space. For such _infinite_ dimensional vector
+spaces a proper notion of basis for them is beyond the scope of this
+course (see ECE 513 Course Notes Chapter 4 if interested).
+
+In this course we will stick with finite dimensional vector spaces. 
+:::
+
+**Example:** In $\mathbb{R}^n$ the $e_k$ above form the _standard basis_. Every
+vector $v \in \mathbb{R}^n$ can be written as:
+
+$$
+v = v_1 e_1 + v_2 e_2 + \dots v_n e_n = \begin{bmatrix} v_1 \\ v_2 \\ \vdots  \\ v_n \end{bmatrix} 
+$$
+
+We say that the $v_i$ are the **coordinates** of $v$ _with respect to the
+standard basis_. Thus coordinates of a vector depend on a choice of basis. 
+
+
+### Linear transformations
+
+It is a common occurence in mathematics that rather than the spaces or objects
+defined to have some properties, the more interesting object of study is maps
+between them. The same remains true of vector spaces: 
+
+::: {#def-lin_transform}
+## Linear transformation
+<br>
+
+Given two vector spaces $V$ and $W$ defined over the same field $\mathbb{F}$, a **linear
+transformation** is a map $A: V \mapsto W$ such that:
+
+$$
+A (\alpha x + \beta y ) = \alpha A(x) + \beta A(y), \quad x, y \in V \quad
+\alpha, \beta \in \mathbb{F} 
+$$
+:::
+
+:::{.column-margin}
+Some authors (including the class notes) also use the term _linear operator_.
+It is a matter of notation, but I prefer to reserve the term _operator_ for maps $f: V
+\mapsto V$, i.e. transformations that map from a space to itself, also called
+_endomorphisms_.
+:::
+
+We say that $V$ is the _domain_ of $A$ and $W$ is the _co-domain_ of $A$.
+
+Furthermore, the **range** of $A$ is a subset of $W$ defined as:
+
+$$
+R(A) := \left\{w \in W : \exists v \in V \; \textrm{s.t} \; A(v) = w \right\}
+$$
+
+Similarly, the **kernel** (also called _nullspace_) of $A$ is the subset of $X$ defined as:
+
+$$
+N(A) := \left\{ v \in V: \; A(v) =0 \right\}
+$$
+
+::: {.callout-tip collapse="true"}
+## Prove $R(A)$ and $N(A)$ are actually subspaces. 
+
+See Theorem 2.5.1 and 2.5.2 in the class notes. 
+:::
+
+We say that the dimension of $R(A)$ is the **rank** of $A$. 
+
+**Example:** Consider the projection _operator_ $P$ in $\mathbb{R}^2$ that discards
+the $y$ -coordinate: 
+
+$$ \begin{align}
+P &: \mathbb{R}^2 \to \mathbb{R}^2 \\
+  &: (x, y)  \mapsto (x, 0)
+\end{align}
+$$
+
+What are $R(P)$ and $N(P)$? 
+
+::: {#def-directsum}
+## Direct sum 
+<br>
+Given two subspace $X$ and $Y$ we say $V$ is **direct sum** of $X$ and $Y$,
+denoted $V=X \oplus Y$ _if and only if_,
+
+ 1. $X \cap Y = \{0\}$
+ 2. each $v \in V$ can be written uniquely as $v = x + y$ for $x \in X$ and $y \in Y$.  
+:::
+
+::: {.callout-tip}
+Can you see that $\mathbb{R}^2 = R(P) \oplus N(P)$ for $P$ the projection
+operator defined above? 
+:::
+
+The nice thing about linear transformations in finite dimensional vector spaces
+is that essentially their study boils down largely to a study of the theory of
+matrices. 
+
+
+### Matrix representation of transformations
+
+Let $A: V \mapsto W$ be a linear transformation between vector space $V$ with
+basis $\{v_1, v_2, \dots, v_n\}$ and vector space $W$ with basis $\{w_1, w_2,
+\dots, w_m\}$. 
+
+**Claim: $A$ can be uniquely (with respect to the chosen bases) represented as
+a matrix.**
+
+To see why this is true, consider the action of $A$ on the basis elements of
+$V$. We have $A(v_1) \in W$ and thus we can write:
+$$
+A(v_1) = \sum \limits _{j=1}^m a_{j1}w_j = a_{11}w_1 + a_{21}w_2 +  \dots + a_{m1}w_m
+$$ 
+for some coefficients $a_{jk} \in \mathbb{F}$. 
+
+Similarly, 
+$$
+A(v_2) = \sum \limits _{j=1}^m a_{j2}w_j , \quad A(v_3) = \sum \limits _{j=1}^m
+a_{j3}w_j, \quad \dots, \quad A(v_n) = \sum \limits _{j=1}^m a_{jn}w_j
+$$ {#eq-1}
+
+We would like to organize the $a_{jk}$ in such a way that the linear
+transformation $A$ can be identified with a matrix $M$, such that
+premultiplying a $v \in V$ by $M$ produces the coordinates of $A(v) \in W$. 
+
+Considering the mechanics of matrix multiplication, we see that the right
+dimension for $M$ is $m \times n$. Collecting the coefficients on the RHS for
+each preceeding equality above as colum vectors we get:
+
+$$
+M = \begin{bmatrix}
+a_{11} & a_{12} & \dots  & a_{1n} \\
+a_{21} & a_{22} & \dots  & a_{2n} \\
+\vdots &         &        & \vdots  \\
+a_{m1} & a_{m2} & \dots & a_{mn}
+\end{bmatrix}
+$$
+
+Each column of $M$ above describes the action of $A$ on a basis element $v_k$
+of $V$ i.e., is the coordinates of $A(v_k)$ in the basis $\{w_1, w_2, \dots,
+w_m\}$. 
+
+Did we accomplish our objective?
+
+Let us check. Suppose $x \in V$ is some arbitrary vector:
+$$
+x = \sum \limits _j ^n x_j v_j 
+$$
+
+Its image under $A$ is $y = A(x) \in W$. That is the coordinates of $A(x)$ with
+respect to the basis $\{w_1, w_2, \dots, w_m\}$ is given by $y$:
+
+$$
+y = \sum \limits _k ^m y_k w_k 
+$$
+
+:::{.column-margin}
+We should make a distinction between $A(x)$, the linear transformation $A$
+_acting_ on the vector $x$ and $Mx$, the premultiplication of vector $x$ by the
+matrix $M$. It is a common abuse of notation to associate the linear
+transformation $A$ with a matrix, also of the same name: $A$. 
+:::
+
+**Claim: $y = A(x) = Mx$**. 
+To see why, write:
+$$
+A(x) = A\left( \sum \limits _k^n x_kv_k \right) = \sum \limits _k ^n x_k A(v_k) 
+$$
+But we know $A(v_k)$ are the columns of $M$. Thus, 
+$$
+A(x) = x_1 \begin{bmatrix} a_{11} \\ a_{21} \\ \vdots \\ a_{m1} \end{bmatrix} + 
+        x_2 \begin{bmatrix} a_{12} \\ a_{22} \\ \vdots \\ a_{m2} \end{bmatrix} + 
+	\dots + 
+        x_n \begin{bmatrix} a_{1n} \\ a_{22} \\ \vdots \\ a_{mn} \end{bmatrix}
+$$
+Collecting together we see:
+$$ A(x) =  \begin{bmatrix}
+	a_{11} & a_{12} & \dots  & a_{1n} \\
+	a_{21} & a_{22} & \dots  & a_{2n} \\
+	\vdots &         &        & \vdots  \\
+	a_{m1} & a_{m2} & \dots & a_{mn}
+	\end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix}
+	= Mx  = y
+$$
+
+
+::: {.callout-caution}
+The matrix representation $M$ of some transformation $L$ depends on the basis
+chosen for its domain and co-domain and is thus _coordinate dependent_. The
+next Lecture deals with what happens when a change of basis is undertaken. 
+:::
+
+::: {#exr-projmat}
+## Matrix representaion for projection
+<br>
+Choose the standard basis $e_1$ and $e_2$ for $\mathbb{R}^2$. What is the
+matrix representation of the projection operator $\operatorname{Pr}$ defined last lecture?
+
+$$
+\begin{align}
+\operatorname{Pr} &: \mathbb{R}^2 \to  \mathbb{R}^2 \\ 
+ &: \left(x, \right) \mapsto \left(x, 0 \right)
+\end{align}
+$$
+
+(For reasons that will become obvious later, we are now using
+$\operatorname{Pr}$ to refer to the projection operator.)
+:::
+
+::: {#exr-rangeker}
+## Range & kernel in terms of $M$
+<br>
+We previously defined the range and kernel of a linear transformation $A$. What
+is the range and kernel of $A$ in terms of the matrix $M$?
+:::
+
+From now on, we will also adopt the familiar abuse of notation and may use the
+same letter to refer to a linear transformation and its matrix representation
+interchangeably.
+
+But we will pick up that thread next lecture. 

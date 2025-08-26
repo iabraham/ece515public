@@ -1,0 +1,31 @@
+---
+title: "Course schedule"
+---
+
+The typical breakdown of topics over a 15 week semester is presented on this
+page. 
+
+## Tentative schedule 
+
+The rough weekly outline of the topics we cover and the relevant chapters in
+the course notes are listed below. 
+
+|    Week   | Chapter   		                                    |
+|-----------|---------------------------------------------------|
+|  1        | Ch. 01 - State Space Models		                    |
+| 1-2       | Ch. 02 - Vector Spaces			                      |
+| 2-3       | Ch. 03 - Solutions of State Equations	            |
+| 4-5       | Ch. 04 - Stability			                          |
+| **10/02** | Midterm 1                                         |
+| 6-7       | Ch. 05 - Controllability		                      |
+| 8-9       | Ch. 06 - Observability, Duality, and Minimality	  |
+| 10        | Ch. 07 - Pole Placement				                    |
+| 11        | Ch. 08 - Tracking and Disturbance Rejection		    |
+| 12        | Ch. 09 - Control Design Goals				              |
+| **11/06** | Midterm 2                                         |
+| 13-14     | Ch. 10 - Dynamic Programing and the HJB Equation	|
+| 14-15     | Ch. 11 - An Introduction to the Minimum Principle |
+
+</p>
+The detailed and actualized schedule can be found on the [lectures](/lectures.html) page. 
+

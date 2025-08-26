@@ -1,0 +1,33 @@
+---
+title: "Fall 2025 - ECE 515 | ME 540 | SE 522"
+---
+
+ECE 515 - Control System Theory and Design is a fundamental first-year graduate
+course on the modern theory of dynamical systems and control. It builds on an
+introductory undergraduate course in control (such as ECE 486) and emphasizes
+state-space techniques for the analysis of dynamical systems and the synthesis
+of control laws meeting given design specifications. Some familiarity with
+linear algebra, as well as ordinary differential equations, is strongly
+recommended, although the necessary material will be reviewed in the context of
+the course.
+
+To register for the class go to the [official
+listing](https://courses.illinois.edu/schedule/2025/fall/ECE/515){target="_blank"}. ECE 515 is
+also cross-listed as ME 540 and SE 522 -- they are all the same course. 
+
+Access the content & [syllabus](syllabus.html) for the Fall 2025 offering
+using the links on the left. Demos require use of UIUC VPN. 
+
+## List of topics
+
+Topics this course aims to cover are:
+
+ * **System modeling and analysis**: system design as a control problem - constraints, goals and performance specifications, input-output and state space models; linearization; review of linear algebra; fundamentals of state-space analysis of linear systems
+
+ * **System structural properties**: stability; introduction to Lyapunov methods; controllability, observability; canonical forms and minimal realizations. Modeling uncertainties; system sensitivity and robustness measures.
+
+ * **Feedback system design**: basic properties of feedback; stabilization and eigenvalue placement by state and output feedback; disturbance rejection; observers for estimating states, and observer feedback systems
+ 
+ * **Optimum feedback control**: dynamic programming and the Hamilton-Jacobi-Bellman equation; synthesis of optimum state regulator systems; numerical methods
+ 
+ * **Introduction to the minimum principle**: calculus of variations and necessary conditions for optimal trajectories; minimum principle for bounded controls; time-optimal control of linear systems; numerical methods

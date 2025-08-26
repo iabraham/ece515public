@@ -1,0 +1,47 @@
+---
+title: "Lectures"
+---
+
+## Detailed schedule 
+
+The detailed schedule of topics is as below but the table may be modified
+depending on how topics get covered as the semester progresses. The scribe
+notes are only available for the days when someone volunteers to scribe for
+extra credit (see [_Scribing_](extracred.html#optional-scribing)). 
+
+NetIDs are displayed next to lectures for which someone has signed up to scribe
+(updated bi-weekly).
+
+| Day/date | Topic                                                  		   |         Scribe notes                   |
+|----------|---------------------------------------------------------------|----------------------------------------|
+| 08/26, T | Logistics, overview, recap/review & intro to state-space      | [Note 01](exlecs/lec01.html)           | 
+| 08/28, R | Lin. Alg. Review (LAR): intro: axioms, basis, (sub)-spaces    | [Note 02](exlecs/lec02.html)           |
+| 09/02, T | LAR1: operators, basis change, spectrum, Jordan form          | [Note 03](secure/lectures/lec03.html)  |
+| 09/04, R | LAR1: Cayley-Hamilton, LTI solns, matrix exponentials         | [Note 04](secure/lectures/lec04.html)  |
+| 09/09, T | BCH formula, change of variables, variation of constants      |                                        |
+| 09/11, R | Change of basis, solns to LTV, STM matrix & properties        |                                        |
+| 09/16, T | LAR2: inner products, norms, quadratic forms                  |                                        |
+| 09/18, R | No lecture -- [Allerton Conference](https://allerton.csl.illinois.edu/){target="_blank"}    |          |
+| 09/23, T | Linearization, stability, Lyapunov's methods                  |                                        |
+| 09/25, R | Controllability & stabilizability: concepts & definitions     |                                        |
+| 09/30, T | Controllability tests, modes and subspaces			               |                                        |
+| 10/02, R | Midterm 1                                                     |  (covers until 9/25 inclusive)         |
+| 10/07, R | Observability/detectability, duality, Kalman decomps.         |                                        |
+| 10/09, T | Observability tests, intro to realization theory              |                                        |
+| 10/14, T | Minimal realizations, intro to feedback control problem       |                                        | 
+| 10/16, R | Stabilization problem, observer design & detectability        |                                        |
+| 10/21, T | Static & dynamic o/p feedback & Luenberger observers          |                                        |
+| 10/23, R | Tracking & disturbance rejection, internal model principle    |                                        |
+| 10/28, T | Functionals, dual spaces, adjoints, and minimum norm solns    |                                        |
+| 10/30, R | Calculus of variations, Euler-Lagrange eqns, Brachistochrone  |                                        |
+| 11/04, T | Optimal control formulation, Hamiltonian & canonical eqns     |                                        |
+| 11/06, R | Midterm 2                                                     |  (covers until 10/28 inclusive)        | 
+| 11/11, T | Dynamic programming, value function & HJB equation            |                                        |
+| 11/13, R | LQR problem, Riccati equation & boundary conditions           |                                        |
+| 11/18, T | Intro to minimum principle & Lagrange multiplier, LQR again   |                                        |
+| 11/20, R | Infinite horizon LQR problem, intro to time optimal control   |                                        |
+| 12/02, T | Bang bang control, nonlinear examples & preview upper courses |                                        |
+| 12/04, R | Asides, side notes, skipped topics & preview higher courses   |                                        |
+| 12/09, T | Course Review Day                                             |                                        |
+| TBD      | Final Exam                                                    |                                        |
+

@@ -1,0 +1,306 @@
+---
+title: "Course syllabus"
+---
+
+**Lecture days**: Tuesdays and Thursdays
+
+**Time:** 1400 hrs - 1520 hrs
+
+**Location:** 3017  Electrical \& Computer Engineering Building (ECEB)
+
+**Credit:** Four (4) hours
+
+**Prerequisite:** If you are an undergrad: [ECE
+486](https://ece.illinois.edu/academics/courses/ece486){target="_blank"} or an equivalent. For
+everyone else familiarity with linear algebra & classical frequency domain
+concepts. 
+
+## Course staff 
+
+ * **Instructor**: [Ivan Abraham](https://itabrah2.web.engr.illinois.edu/){target="_blank"}
+   - e-mail: itabrah2 [at] illinios [dot] edu 
+   - office: 2058 ECEB
+   - office hours: 1530 - 1630 hrs on Thursdays
+
+<p> </p>
+
+ * **Teaching Assistant**: Erkan Bayram
+   - e-mail: ebayram2 [at] illinois [dot] edu 
+   - office hours: 1630 - 1730 hrs on Tuesdays
+   - location: ECEB 3034
+
+## Course resources
+
+The main document we will use is the course notes (**required**):
+
+ - **[BMP]** T. Başar, S. P. Meyn, W. R. Perkins, Lecture Notes on Control System Theory and Design. Available [online](https://arxiv.org/abs/2007.01367){target="_blank"}. Also see [errata](text-errata.html).
+
+The above set of notes can also be purchased from the ECE Supply Center (ECEB 1031). 
+
+In addition to the course notes the following textbooks are suggested reading,
+which will supplement the material we will cover in class:
+
+ * **[LSTC]** C.-T. Chen, Linear System Theory and Design, 3rd edition. Oxford University Press, 1999. _On reserve in Grainger Library._
+ * **[LSTJ]** J. P. Hespanha, Linear Systems Theory. Princeton University Press, 2009, 2018. _Available online through Grainger Library._
+ * **[FDLS]** R. W. Brockett, Finite Dimensional Linear Systems. Wiley, 1970, reprinted by SIAM, 2015. _Available online through Grainger Library._
+
+If you would like to refresh your understanding of prerequisites then I would recommend the following textbooks:
+
+ * **[LADR]** S. Axler, Linear Algebra Done Right. Springer, 2015. 
+ * **[FCDS]** G. Franklin, D. Powell, A. Emami-Naeini, Feedback Control of Dynamic Systems. Pearson, 2021. 
+
+For an in-depth or advanced treatment of some relevant concepts (for the interested student) the following may prove useful:
+
+ * **[SCLA]** R. Horn & S. R. Garcia, Matrix Mathematics: A Second Course in Linear Algebra, Cambridge University Press, 2023. 
+ * **[CVOC]** D. Liberzon, Calculus of Variations and Optimal Control Theory. Princeton University Press, 2012.
+ * **[OVSM]** D. Luenberger, Optimization by Vector Space Methods. John Wiley & Sons, 1969. _On reserve in Grainger Library._ 
+
+## Academic integrity
+
+The usual academic integrity policies apply. Students are expected to behave in a
+professional & ethical manner, and _your work should be your own_. At minimum,
+plagiarism or cheating will result in a zero for the relevant assignment. More
+severe ethical violations can warrant further penalties, including a failing
+grade at the discretion of the course instructor. 
+
+Details can be found in:
+
+ * [Quick reference
+   guide](https://provost.illinois.edu/policies/policies/academic-integrity/students-quick-reference-guide-to-academic-integrity/){target="_blank"}
+ * [Student Code](https://studentcode.illinois.edu/article1/part4){target="_blank"}
+
+For homework in particular, while you discuss problems together with your
+peers, any **work handed in must be your own!** Identical submissions will
+result in violations of the academic integrity policy.
+
+Ignorance is not an excuse for any academic dishonesty. It is your
+responsibility to read the linked policy to avoid any misunderstanding. Do not
+hesitate to ask the instructor(s) if you are ever in doubt about what
+constitutes plagiarism, cheating, or any other breach of academic integrity.
+
+### Use of generative AI
+
+For the extra credit project in the course, you have free rein to use Claude,
+Gemini, or your favourite among their siblings, as you see fit. 
+
+[**However**, for homework, you are greatly encouraged to **NOT** use
+generative AI.]{style="color: red; font-size:120%; text-align:center;"}
+
+That said, the TA and I aren't going to police your use of generative AI. This
+is truly a fundamental/basic course in control theory. If you use generative AI
+to solve problems that you should be solving yourself, you may get by on the
+homework but have difficulties later in exams (both in this course &
+departmental ones like qualifying exams).
+
+
+For the primary audience of this course, academic integrity should not be an
+issue. Nevertheless, if you find that you are struggling with the material in
+the course, feel free to reach out to me or the TA. Send us an email, drop by
+during office hours, see me after class, post on Ed, etc. No student should
+feel like they must resort to cheating in this class.
+
+> The true mark is not what one knows, but what one does, when one does not. 
+
+### Discussion forum
+
+We will use the EdStem portal for discussion. You can sign up for the course on Ed
+if you have a `illinois.edu` e-mail address with this link:
+
+[https://edstem.org/us/join/wzJVGf](https://edstem.org/us/join/wzJVGf){target="_blank"}
+
+## Homework
+
+Homework is due at the **beginning of class** on the due date via Gradescope.
+**Absolutely,** no late homework will be accepted **_at all_**:
+
+ - this is a **large** _graduate_ course 
+ - I am responsible for another one with an enrollment of ~250 students. 
+
+There simply is no way to support late assignments or a late submission policy. 
+
+> To account for any personal events, emergencies or unforeseen circumstances,
+> the lowest homework grade will be dropped.
+
+No exceptions will be made to the above policy or any extensions
+given. In case of an event that greatly interferes with your ability to
+complete assignments this semester, grading will be determined by the
+University policy on such extenuating circumstances.
+
+Find homework assignments [here](/assignments.html).
+
+
+## Exams
+
+There will be two midterms for this course and a final exam as scheduled by the
+Registrar's office. Please see the course schedule for tentative contents of
+the exams.
+
+ * **E1:** In class, 10/02
+ * **E2:** In class, 11/06
+ * **FE:** As per the Registrar's office
+
+A conflict final exam will only be offered by policy if another exam or course
+in which the student is enrolled occurs at the same time as the ECE 515 exam.
+Please note that documentation about the conflict from the other course’s
+instructor will be required. Instructions regarding the exam and practice
+material will be [available here.](exams.html#practice-material)
+
+### Accomodations 
+
+Illinois law requires the University to reasonably accommodate its students'
+religious beliefs, observances, and practices in regard to admissions, class
+attendance, and the scheduling of examinations and work requirements. *You
+should examine this syllabus at the beginning of the semester for potential
+conflicts between course deadlines and any of your religious observances.* 
+
+If a conflict exists, you should notify your instructor of the conflict and
+[follow the
+procedure](https://odos.illinois.edu/resources/faculty/religious-observances#request){target="_blank"}
+to request appropriate accommodations. In particular, students should complete
+the [Request for Accommodation for Religious
+Observances](https://cm.maxient.com/reportingform.php?UnivofIllinois&layout_id=42){target="_blank"}
+as necessary. 
+
+**This should be done by the 10th-day drop deadline.** 
+
+All other instances will be handled on a case-by-case basis and will require
+appropriate documentation (note from McKinley, athletic director, etc.) and
+approvals (relevant campus unit).
+
+## Attendance 
+
+As a graduate class, we understand you may have different commitments,
+responsibilities and deadlines. Thus attendance is not required but **highly
+encouraged.** 
+
+> Attendance	of	lectures	is	_crucial_	in	the	sense	that	exams
+> will	be	based	on	both	lectures	and	assigned	reading	materials.	You	are
+> responsible	for	all	lecture	materials	and	for	any	announcements	made	in
+> class,	whether	or	not	you	are	present.	
+
+Please	communicate	with	the instructor	and/or	the	teaching	assistant	if
+you	become	ill	or	emergencies arise	so	that	we	will	be	aware	of	your
+circumstances.	If	you	miss	a class,	you	should	ask	a	classmate	to	review
+their	notes	from	that	day. If	you	have	to miss	classes	for	a	prolonged
+period	due	to	serious	illness,	you	should speak	to	the	teaching	assistant
+and/or	the	instructor	as	soon	as possible.	
+
+See important information regarding [absence
+letters](https://odos.illinois.edu/community-of-care/resources/students/absence-letters/){target="_blank"}.
+
+## Grade breakdown
+
+The two midterm exams are weighted equally unless adjustments need to be made.
+The lowest homework score will be dropped. Exams are [not
+dropped](exams.html#exam-make-up-policy).
+
+| Component | Weight | 
+|-----------|--------|
+| Homework  |  35%   |
+| Midterms  |  40%   |
+| Final Exam|  25%   |
+
+You **must** attend the final unless you are seeking an incomplete grade. 
+
+
+## Disability related accommodations
+
+To obtain disability-related academic adjustments and/or auxiliary aids,
+students with disabilities must contact the course instructor as soon as
+possible and provide the instructor with a Letter of Academic Accommodations
+from Disability Resources and Educational Services (DRES). To ensure that
+disability-related concerns are properly addressed from the beginning, students
+with disabilities who require assistance to participate in this class should
+apply for services with DRES and see the instructor as soon as possible. If you
+are concerned you have a disability-related condition that is impacting your
+academic progress, there are academic screening appointments available that can
+help diagnose a previously undiagnosed disability. Please find resources
+available by visiting the [DRES website](https://www.disability.illinois.edu/){target="_blank"}.
+
+## Inclusivity & diversity 
+
+The Grainger College of Engineering is committed to the creation of an
+anti-racist, inclusive community that welcomes diversity along several
+dimensions, including, but not limited to, race, ethnicity and national
+origins, gender and gender identity, sexuality, disability status, class, age,
+or religious beliefs.
+
+The success of this course depends on each of us creating a supportive and safe
+learning environment that promotes free discussion and ensures that everyone
+has an equal opportunity to succeed. Everyone is expected to contribute to
+creating and sustaining a climate where employees, instructors, and students
+may work together without being concerned about personal ridicule, or being
+exposed to inappropriate or intolerable language. You are invited to notify the
+course director of any instances of racism, discrimination, microaggressions,
+or other offensive behavior if you feel safe doing so.
+
+You can also report these behaviors to the Office of the Vice Chancellor for
+[Diversity, Equity &
+Inclusion](https://diversity.illinois.edu/diversity-campus-culture/belonging-resources/){target="_blank"}.
+Based on your report, they will follow up and reach out to students to make
+sure they have the support they need to be healthy and safe.
+
+## Community of care
+
+As members of the Illinois community, we each have a responsibility to express
+care and concern for one another. If you come across a classmate whose behavior
+concerns you, whether in regards to their well-being or yours, we encourage you
+to refer this behavior to the Student Assistance Center (call 217-333-0050 or
+[see
+here](http://odos.illinois.edu/community-of-care/referral/){target="_blank"}).
+Based on your report, the staff in the Student Assistance Center reaches out to
+students to make sure they have the support they need to be healthy and safe.
+
+Further, as a Community of Care, we want to support you in your overall
+wellness. We know that students sometimes face challenges that can impact
+academic performance (examples include mental health concerns, food insecurity,
+homelessness, personal emergencies). Should you find that you are managing such
+a challenge and that it is interfering with your coursework, you are encouraged
+to contact the Student Assistance Center (SAC) in the Office of the Dean of
+Students for support and referrals to campus and/or community resources.
+
+## Campus emergency policy 
+In the event of a major campus emergency, course requirements, deadlines, and
+grading percentages are subject to changes that may be necessitated by a
+revised semester calendar or other circumstances.
+
+Please review the run, hide, fight
+[handout](/resources/rhf.pdf){target="_blank"} and
+[video](https://mediaspace.illinois.edu/media/t/1_bbti3ec5){target="_blank"}
+provided on campus for information from the U of I Police Department.
+
+:::{style="background-color:#efefef;font-style:italic;padding:15px;"}
+Emergencies can happen anywhere and at any time, so it’s important that we
+take a minute to prepare for a situation in which our safety could depend on
+our ability to react quickly.
+
+ - Take a moment to learn the different ways to leave the class building. If
+   there’s ever a fire alarm or something like that, you’ll know how to get out
+   and you’ll be able to help others get out.
+ - Next, figure out the best place to go in case of severe weather – we’ll need
+   to go to a low-level in the middle of the building, away from windows. 
+ - If there’s ever someone trying to hurt us, our best option is to run out of
+   the building. If we cannot do that safely, we’ll want to hide somewhere we
+   can’t be seen, and we’ll have to lock or barricade the door if possible and
+   be as quiet as we can. We will not leave that safe area until we get an
+   Illini-Alert confirming that it’s safe to do so. If we can’t run or hide,
+   we’ll fight back with whatever we can get our hands on. 
+
+If you want to better prepare yourself for any of these situations, visit
+[police.illinois.edu/safe](https://police.illinois.edu/safe){target="_blank"}.
+:::
+
+## Final thoughts 
+
+All students are expected to contribute to a supportive learning environment
+which involves _helping each other **learn**._ Therefore, students are
+expected to be civil and respectful in their engagements with each other and
+staff.
+
+Throughout the course, any and all questions on the _course content_ are
+welcome. There are no stupid questions, and everyone should feel comfortable
+asking any clarifications during the class. However, we may move discussions
+offline, either to office hours or a discussion forum, if there is not enough
+in-class time to fully resolve the matter. 
+
+> In necessariis unitas, in dubiis libertas, in omnibus caritas

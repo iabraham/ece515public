@@ -1,0 +1,77 @@
+---
+title: "Homework assignments"
+---
+
+::: {.callout-tip}
+## Gradescope course code
+Use entry code **TBD** to add the course on Gradescope where you will be
+submitting assignments. Best practice is to **use your Illinois e-mail ID** to
+make an account. 
+:::
+
+## Instructions
+
+We prefer you **typeset your homework**. Latex files are provided for each
+homework assignment which you can use in conjunction with the [homework
+template](/secure/homework/hw-template.tex){target="_blank"}.
+
+::: {.column-margin}
+The provided template is a generic template with no content. You should replace
+all content in red font with your own. You may use the provied `.tex` file for each homework below.
+:::
+
+
+::: {.column-margin}
+The provide `.tex` files are auto-generated using [`pandoc`](https://pandoc.org/index.html). It may not be
+the cleanest LaTeX source. 
+:::
+
+We do this for two reasons:
+
+ - This is a graduate level course, and the majority of you will write
+   papers, theses, dissertations, etc. You will need to know Latex. This
+   course is as good a time as any to develop the skill. 
+ - This is a largely theoretical or proof-based course with computations
+   sprinkled once in a while. It makes your TA's life easier if you put in
+   the effort to clean up your work/thoughts when you write proofs. 
+
+If you insist on relying on pre-semiconductor era tools, 
+
+ - Make sure your written work is **legible**. If the TA cannot read your work, they
+   cannot grade it. They may ask you to resubmit or dock points off.
+ - When plotting functions, use a ruler and graph paper. Include a title and
+   axes labels on all plots.
+ - Do upload high quality PDF scans; most modern smartphones have a document
+   scanning functionality.
+
+::: {.column-margin}
+Of course you are always welcome to the modern age and free to use MATLAB,
+Python, etc. 
+:::
+
+Regardless of whether you typeset or write solutions by hand, read about how to
+submit assignments on Gradescope
+[here](https://help.gradescope.com/article/ccbpppziu9-student-submit-work){target="_blank"}.
+Some pointers:
+
+ * Make sure to use the tools in Gradescope to mark where in your upload the answer to each question can be found.
+ * One good practice is to start each question on a new page.
+ * For a multi-page answer, associate all relevant pages with the question.
+ * Include units where appropriate.
+
+
+## Problem sets 
+
+| Release Date | 	Title	                |     Latex         | Due Date | Solution   |
+|--------------|------------------------|-------------------|----------|------------|
+|    08/26     | {{<var homework.h01>}} | {{<var tex.t01>}} |   09/04  |    Sol     |
+|    09/02     | {{<var homework.h02>}} | {{<var tex.t02>}} |   09/11  |    Sol     |
+|    09/09     | Homework 03  | Tex       |   09/18  |    Sol     |
+|    09/16     | Homework 04  | Tex       |   09/25  |    Sol     |
+|    09/30     | Homework 05  | Tex       |   10/09  |    Sol     |
+|    10/07     | Homework 06  | Tex       |   10/16  |    Sol     |
+|    10/14     | Homework 07  | Tex       |   10/23  |    Sol     |
+|    10/21     | Homework 08  | Tex       |   10/30  |    Sol     |
+|    11/04     | Homework 09  | Tex       |   11/13  |    Sol     |
+|    11/11     | Homework 10  | Tex       |   11/20  |    Sol     |
+|    12/01     | Homework 11  | Tex       |   12/09  |    Sol     |

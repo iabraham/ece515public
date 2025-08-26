@@ -1,0 +1,73 @@
+---
+Title: Homework 02
+---
+
+## Homework 2 - Due: 09/11
+
+### Problem 1
+
+Convert each of the following higher-order differential equations into state-space form:
+
+- System (a): $$\ddot x = \dot u + 3 u$$ 
+- System (b): $$\dfrac{d^3 x}{dt^3} - 2 \dfrac{d^2x}{dt^2} + x = u$$
+- System (c): $$\ddot x = \sin \left( \dot x - x \right)$$
+
+### Problem 2
+
+ a. Let $A$ be an $m \times n$ matrix. Show that if there exists a matrix $B$
+ such that $BA=I_{n}$ then the columns of $A$ are linearly independent. 
+ b. Next show that if there exists a matrix $C$ such that $AC=I_{m}$ then the rows of $A$ are linearly independent. 
+ c. Matrices $B$ and $C$ (when they exist) are called
+ left and right inverses of $A$. Prove that if $A$ has a left and a right inverse then $A$ is square and the
+ left and right inverses must be equal.
+ d. Suppose for some matrices $X$ and $Y$ we have that $AX = AY$. Is it true that $X=Y$? Prove or provide a counter example. 
+
+### Problem 3
+
+Let $A: X \to Y$ be a linear transformation. 
+
+ (a) Prove that $\dim N (A) + \dim R(A) = \dim X$ (the sum of the dimension of
+ the nullspace of $A$ and the dimension of the range of $A$ equals the
+ dimension of $X$).
+ (b) Now assume that $X = Y$. It is not always true that $X$ is a [direct sum](/exlecs/lec02.html#def-directsum) of
+ $N(A)$ and $R(A)$. Find a counterexample demonstrating this. Also, describe a
+ class of linear transformations (as general as you can think of) for which
+ this statement is true.
+
+### Problem 4
+Let $A$ be a real valued $n \times n$ matrix. Suppose that $\lambda + i \mu$
+is a complex eigenvalue of $A$ and $x + iy$ is a corresponding complex
+eigenvector. Here $\lambda, \mu \in \mathbb{R}$ and $x, y \in \mathbb{R}^n$. 
+
+ a. Show that $x-iy$ is also an eigenvector with eigenvalue $\lambda - i \mu$. 
+
+ b. Let $V$ be the 2-dimensional subspace over $\mathbb{R}$ spanned by $x$ and
+ $y$. In other words, $V$ is the set of linear combinations, with real
+ coefficients, of the real-valued vectors $x$ and $y$. Show that $V$ is an
+ invariant subspace for $A$, in the sense that for every $z \in V$ we have $Az
+ \in V$.
+
+### Problem 5
+
+Do Problem 2.11.14 from the [Official Notes](https://arxiv.org/pdf/2007.01367).
+
+### Problem 6
+Consider the following matrix, whose exponential we derive in class:
+
+$$
+A = \begin{bmatrix} a & b \\ -b & a \end{bmatrix} \qquad a, b \in \mathbb{R}
+$$
+
+ a. Re-derive an expression for $e^{At}$ by diagonalizing $A$ over $\mathbb{C}$
+  and using the formula 
+  $$e^{a \pm ib}:= e^a \cos b \pm ie^a \sin b$$ 
+  (treat this as the _definition_ of the complex exponential).
+ b. Using the formila $e^{A(t+\sigma)} = e^{At}e^{A \sigma}$ and the result of
+  (a), for suitably chosen values of $a$ and $b$, verify the trigonometric
+  identities:
+  $$
+  \begin{align}
+  \cos (t+\sigma) &= \cos t \cos \sigma - \sin t \sin \sigma \\
+  \sin (t + \sigma) &= \sin t \cos \sigma + \cos t \sin \sigma
+  \end{align}
+  $$

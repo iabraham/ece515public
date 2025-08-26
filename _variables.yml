@@ -1,0 +1,40 @@
+version: 1.2
+
+homework:
+  h01: "[Homework 01](/secure/homework/hw01.html)"
+  h02: "[Homework 02](/secure/homework/hw02.html)"
+  h03: "[Homework 03](/secure/homework/hw03.html)"
+  h04: "[Homework 04](/secure/homework/hw04.html)"
+  h05: "[Homework 05](/secure/homework/hw05.html)"
+  h06: "[Homework 06](/secure/homework/hw06.html)"
+  h07: "[Homework 07](/secure/homework/hw07.html)"
+  h08: "[Homework 08](/secure/homework/hw08.html)"
+  h09: "[Homework 09](/secure/homework/hw09.html)"
+  h10: "[Homework 10](/secure/homework/hw10.html)"
+  h11: "[Homework 11](/secure/homework/hw11.html)"
+
+tex:
+  t01: "[Tex 01](/secure/homework/hw01.tex)"
+  t02: "[Tex 02](/secure/homework/hw02.tex)"
+  t03: "[Tex 03](/secure/homework/hw03.tex)"
+  t04: "[Tex 04](/secure/homework/hw04.tex)"
+  t05: "[Tex 05](/secure/homework/hw05.tex)"
+  t06: "[Tex 06](/secure/homework/hw06.tex)"
+  t07: "[Tex 07](/secure/homework/hw07.tex)"
+  t08: "[Tex 08](/secure/homework/hw08.tex)"
+  t09: "[Tex 09](/secure/homework/hw09.tex)"
+  t10: "[Tex 10](/secure/homework/hw10.tex)"
+  t11: "[Tex 11](/secure/homework/hw11.tex)"
+
+sol:
+  s01: "[Sol](/secure/hw_sol/sol01.pdf)"
+  s02: "[Sol](/secure/hw_sol/sol02.pdf)"
+  s03: "[Sol](/secure/hw_sol/sol03.pdf)"
+  s04: "[Sol](/secure/hw_sol/sol04.pdf)"
+  s05: "[Sol](/secure/hw_sol/sol05.pdf)"
+  s06: "[Sol](/secure/hw_sol/sol06.pdf)"
+  s07: "[Sol](/secure/hw_sol/sol07.pdf)"
+  s08: "[Sol](/secure/hw_sol/sol08.pdf)"
+  s09: "[Sol](/secure/hw_sol/sol09.pdf)"
+  s10: "[Sol](/secure/hw_sol/sol10.pdf)"
+  s11: "[Sol](/secure/hw_sol/sol11.pdf)"
