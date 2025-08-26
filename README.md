@@ -4,7 +4,7 @@ author: itabrah2@ilinois.edu
 
 ## Fall 2025
 
-This is the repository for the ECE 515 website for the Fall 2025 offering of
+This is the repository for the [ECE 515 Website](https://courses.grainger.illinois.edu/ece515/fa2025/) for the Fall 2025 offering of
 the course. This repostiory uses the [Quarto](https://quarto.org/) publishing system. 
 
 To preview the website, simply install the Quarto engine and run on the
